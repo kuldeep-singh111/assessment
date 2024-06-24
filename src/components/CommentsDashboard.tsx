@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import  { useState, useEffect, useMemo } from 'react';
 import axios from 'axios';
 import './CommentsDashboard.css'; // Import the CSS file
 import { FaArrowRight } from "react-icons/fa6";
@@ -101,7 +101,7 @@ const CommentsDashboard = () => {
           </tr>
         </thead>
         <tbody>
-          {paginatedComments.map((comment, index) => (
+          {paginatedComments.map((comment) => (
             <tr key={comment.id} className="table-row">
               <td className="table-cell">{1201 + comment.id}</td>
               <td className="table-cell">{comment.name}</td>
